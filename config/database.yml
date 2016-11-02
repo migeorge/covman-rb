@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  username: covman
+  password: covman
+  database: covman
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: covman-rb_test
+
+production:
+  <<: *default
