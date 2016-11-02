@@ -55,4 +55,5 @@ Percentage of the requests served within a certain time (ms)
   95%  30320
   98%  30484
   99%  30554
- 100%  30794 (longest request)```
+ 100%  30794 (longest request)
+ ```
